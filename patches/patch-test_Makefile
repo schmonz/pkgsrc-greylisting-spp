@@ -1,6 +1,6 @@
 $NetBSD$
 
-Use "echo -n" portably.
+Avoid unnecessary use of unportable "echo -n".
 
 --- test/Makefile.orig	2008-04-27 20:17:06.000000000 +0000
 +++ test/Makefile
@@ -9,7 +9,7 @@ Use "echo -n" portably.
  	echo junk@tivano.de >envdir/SMTPMAILFROM
  	echo junk01@tivano.de >envdir/SMTPRCPTTO; ./test-accept.sh envdir
 -	echo -n "" >envdir/SMTPMAILFROM; ./test-reject-later.sh envdir
-+	${ECHO_N} "" >envdir/SMTPMAILFROM; ./test-reject-later.sh envdir
++	>envdir/SMTPMAILFROM; ./test-reject-later.sh envdir
  	sleep 1
  	./test-accept.sh envdir
  	./test-reject-later.sh envdir
@@ -18,7 +18,7 @@ Use "echo -n" portably.
  	./test-accept.sh envdir
  	rm -rf $(TESTDB); mkdir -p dbdir
 -	echo -n "" >envdir/SMTPMAILFROM
-+	${ECHO_N} "" >envdir/SMTPMAILFROM
++	>envdir/SMTPMAILFROM
  	echo junk01@tivano.de >envdir/SMTPRCPTTO; ./test-reject-later.sh envdir
  	echo junk02@tivano.de >envdir/SMTPRCPTTO; ./test-reject-later.sh envdir
  	sleep 1

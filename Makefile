@@ -9,9 +9,6 @@ HOMEPAGE=		http://www.unix-ag.uni-kl.de/~conrad/greylisting/
 COMMENT=		Plugin for qmail-spp that provides greylisting
 LICENSE=		gnu-gpl-v2
 
-# XXX TODO:
-# - build on NetBSD, Tribblix etc.
-#
 # run in production to see if it's good
 #
 # qmail-run:
@@ -23,7 +20,6 @@ CONFIGURE_SCRIPT=	${MAKE}
 CONFIGURE_ARGS=		${BUILD_MAKE_FLAGS}
 BUILD_DIRS=		src
 TEST_DIRS=		test
-TEST_ENV+=		ECHO_N="${ECHO_N}"
 TEST_TARGET=		run-tests
 
 INSTALLATION_DIRS=	bin share/doc/${PKGBASE}
