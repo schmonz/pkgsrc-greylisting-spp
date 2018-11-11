@@ -6,3 +6,4 @@ SHA512 (greylisting-spp-1.1.tar.gz) = 7797c98243283f7ef8985df7f0525502f14b871f5d
 Size (greylisting-spp-1.1.tar.gz) = 33254 bytes
 SHA1 (patch-src_Makefile) = f41880f39b144f1d46daa7c6fa5f30c07ecaf33a
 SHA1 (patch-test_Makefile) = 5cb3129cd6d3c855b7bfcca57d8dfd12cd474d1f
+SHA1 (patch-test_envdir.sh) = 31384dfd6d772dc97a6a870f4817ab1a4312100a

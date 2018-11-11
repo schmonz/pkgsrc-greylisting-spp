@@ -10,9 +10,6 @@ COMMENT=		Plugin for qmail-spp that provides greylisting
 LICENSE=		gnu-gpl-v2
 
 # XXX TODO:
-# - get tests to pass
-# - do I need libtool? seems not
-# - test for all four storage backends
 # - build on NetBSD, Tribblix etc.
 #
 # run in production to see if it's good
@@ -26,6 +23,7 @@ CONFIGURE_SCRIPT=	${MAKE}
 CONFIGURE_ARGS=		${BUILD_MAKE_FLAGS}
 BUILD_DIRS=		src
 TEST_DIRS=		test
+TEST_ENV+=		ECHO_N="${ECHO_N}"
 TEST_TARGET=		run-tests
 
 INSTALLATION_DIRS=	bin share/doc/${PKGBASE}
