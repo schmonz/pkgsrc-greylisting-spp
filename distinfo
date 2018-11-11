@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.1 2018/11/11 01:59:23 schmonz Exp $
 
 SHA1 (greylisting-spp-1.1.tar.gz) = 648cfcb135619635e38a84c4c7316cba35d929e5
 RMD160 (greylisting-spp-1.1.tar.gz) = 91b2a46130070a92913c7e399004d86ad524a940

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2018/11/11 01:59:23 schmonz Exp $
 
 DISTNAME=		greylisting-spp-1.1
 CATEGORIES=		mail
@@ -8,12 +8,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.unix-ag.uni-kl.de/~conrad/greylisting/
 COMMENT=		Plugin for qmail-spp that provides greylisting
 LICENSE=		gnu-gpl-v2
-
-# run in production to see if it's good
-#
-# qmail-run:
-# - depend on greylisting-spp
-# - set any necessary env vars
 
 USE_TOOLS+=		gmake
 CONFIGURE_SCRIPT=	${MAKE}

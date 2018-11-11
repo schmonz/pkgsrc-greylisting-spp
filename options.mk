@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2018/11/11 01:59:23 schmonz Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.greylisting-spp
 PKG_OPTIONS_OPTIONAL_GROUPS=	db

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2018/11/11 01:59:23 schmonz Exp $
 bin/greylisting-spp
 share/doc/greylisting-spp/README
 share/doc/greylisting-spp/README.db-bdb

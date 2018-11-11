@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-test_envdir.sh,v 1.1 2018/11/11 01:59:23 schmonz Exp $
 
 Filter out variables that trip up unset.
 
